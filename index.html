@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>sistangomrok | سامانه صف کامیون‌های میرجاوه</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
+  <script src="libs/jspdf.min.js"></script>
+</head>
+<body>
+  <header>
+    <img src="logo-rustam.png" alt="لوگوی رستم" class="logo">
+    <h1>sistangomrok | سامانه صف کامیون‌های میرجاوه</h1>
+  </header>
+
+  <section class="form-box">
+    <h2>🔍 جست‌وجوی پلاک</h2>
+    <input type="text" id="part1" placeholder="دو رقم اول" maxlength="2">
+    <select id="letter">
+      <option value="">حرف فارسی</option>
+      <option value="الف">الف</option>
+      <option value="ب">ب</option>
+      <option value="پ">پ</option>
+      <option value="ت">ت</option>
+    </select>
+    <input type="text" id="part2" placeholder="سه رقم بعدی" maxlength="3">
+    <select id="province">
+      <option value="">کد استان</option>
+      <option value="11">11 - تهران</option>
+      <option value="47">47 - سیستان و بلوچستان</option>
+      <option value="26">26 - آذربایجان غربی</option>
+    </select>
+    <br>
+    <button onclick="searchPlate()">جست‌وجو</button>
+    <button onclick="downloadPDF()">📥 دانلود PDF</button>
+  </section>
+
+  <section class="result-card" id="result" style="display: none;"></section>
+
+  <footer>
+    خسته نباشید و خدا قوت به شما رانندگان زحمتکش 🚛  
+    <br> امید است از سفر به استان سیستان خشنود باشید 🌄
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

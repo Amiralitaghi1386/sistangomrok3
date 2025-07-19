@@ -1,0 +1,82 @@
+/* فونت اصلی فارسی */
+body {
+  font-family: 'Vazirmatn', sans-serif;
+  margin: 0;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* آبی تیره و سنگی */
+  color: #fff;
+}
+
+/* لوگو */
+.logo {
+  max-width: 140px;
+  margin: 1rem auto;
+  display: block;
+}
+
+/* تیتر سایت */
+header {
+  text-align: center;
+  padding: 1rem;
+}
+header h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  color: #ffd54f; /* طلایی نرم */
+}
+
+/* فرم ورودی پلاک */
+.form-box {
+  text-align: center;
+  padding: 1.5rem;
+}
+input, select {
+  padding: 0.7rem;
+  margin: 0.4rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  width: 110px;
+  background-color: #fefefe;
+  color: #333;
+}
+button {
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #ffd54f;
+  color: #000;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+button:hover {
+  background-color: #ffb300;
+}
+
+/* کارت نمایش نتیجه */
+.result-card {
+  background-color: rgba(255,255,255,0.1);
+  margin: 2rem auto;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 500px;
+  font-size: 1rem;
+  text-align: right;
+  line-height: 1.6;
+  direction: rtl;
+  color: #f0f0f0;
+  border: 1px solid #ffd54f;
+}
+
+/* فوتر سایت */
+footer {
+  background-color: #ffe082;
+  color: #004d40;
+  padding: 1.2rem;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 2rem;
+  border-radius: 0 0 16px 16px;
+  line-height: 1.7;
+}
